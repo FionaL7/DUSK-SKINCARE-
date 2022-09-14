@@ -1,0 +1,127 @@
+<% layout('layouts/boilerplate') %> 
+ <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/product.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/stars.css">
+
+<script src="/Scripts/qtyBtn.js"></script>
+
+
+<div class="container my-4">
+<a href="/product" style="color: black; text-decoration: none;"><i class="fas fa-arrow-left" style="color: black;"></i> Go back</a>
+
+<div class="row">
+
+<div class="col-md-5">
+<div class="card" style="border: none; display: flex; justify-content: center;">
+<% for (let img of product.images){ %>
+ <img src="<%= img.url %> " class="img-fluid rellax"   alt="...">
+  <% } %> 
+</div>
+</div>
+
+<div class="col-md-7 col-sm-8" id="details">
+<div class="card-body rellax" data-rellax-speed="1">
+    <h1 class="card-title"><u><%=product.name%></u></h2>
+<h3 class="py-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="23px" height="23px"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg> <%=product.price%> </h3>
+
+<form action="/add-to-cart" method="post" enctype="application/x-www-form-urlencoded">
+<div class="d-flex justify-content-start">
+<!-- <div>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="product[quantity]" min="1" max="8" placeholder="0">
+</div> -->
+
+ <div> 
+<input type="hidden" name="id" value="<%=product._id%>">
+<button class="btn btn-outline-dark" style="width: 200px;"> ADD TO CART</button>
+
+<button class="btn" id="hrtBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15px" height="15px" id="heartI"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></button>
+</div>
+</div>
+
+</form>
+
+
+<div id="description">
+<h5>Description:</h5>
+<p style="font-size: 20px;"><%= product.description %> </p>
+</div>
+</div>
+<div class="list">
+<ul>
+<li>Cruelty Free</li>
+<i class="fas fa-circle" style="color: black; font-size: 7px;"></i>
+<li>Vegan</li>
+<i class="fas fa-circle" style="color: black; font-size: 7px;"></i>
+<li>Paraben Free</li>
+<i class="fas fa-circle" style="color: black; font-size: 7px;"></i>
+<li>Dermalogically Tested</li>
+</ul>
+</div>
+    </div>
+
+   
+
+<div class="mt-5" id="reviews">
+<div>
+<h3 style="text-align: center;">RATINGS AND REVIEWS</h3>
+<hr style="width: 100%;">
+</div>
+
+<h4 style="text-decoration:underline; padding:15px 0">Write a review</h4>
+<form action="/product/<%= product._id %>/reviews" method="POST" >
+<div class="mb-3">
+                <!-- <label class="form-label" for="rating">Rating</label>
+            <input type="range" class="form-range" min="1" max="5" name="review[rating]"> -->
+                <fieldset class="starability-coinFlip">
+
+                  <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="0" checked
+                    aria-label="No rating." />
+                  <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+                  <label for="first-rate1" title="Terrible">1 star</label>
+                  <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+                  <label for="first-rate2" title="Not good">2 stars</label>
+                  <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+                  <label for="first-rate3" title="Average">3 stars</label>
+                  <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+                  <label for="first-rate4" title="Very good">4 stars</label>
+                  <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+                  <label for="first-rate5" title="Amazing">5 stars</label>
+                </fieldset>
+</div>
+ <div class="mb-3">
+                <label class="form-label" for="body">Review</label>
+                <textarea class="form-control" name="review[body]" cols="30" id="id" rows="3" required></textarea>
+                <div class="valid-feedback">Looks good</div>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-success">Submit</button>
+              </div>
+</form>
+</div>
+</div>
+<hr style="width: 100%; ">
+<div>
+<h5 class="pb-2">Customer reviews</h5>
+</div>
+ <% for(let review of product.reviews){ %>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Rating:<%= review.rating %>
+                </h5>
+                <p class="starability-result" data-rating="<%= review.rating %>">
+                  Rated: <%= review.rating %>
+                </p>
+                <h6 class="card-subtitle text-muted">
+                  <%= review.name.username %>
+                </h6>
+
+                <p class="card-text">Review: <%= review.body %>
+                </p>
+               
+              </div>
+            </div>
+            <% } %>
+</div>
+</div>
+

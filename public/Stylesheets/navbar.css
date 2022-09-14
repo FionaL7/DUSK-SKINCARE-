@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+.navbar {
+  background-color: #f2bc57b7;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-family: "Ephesis", cursive;
+  position: absolute;
+  text-decoration: underline;
+  /* top: 5px; */
+  font-size: 30px;
+  padding-left: 10px;
+  justify-content: start;
+}
+
+a:hover {
+  color: white;
+}
+
+.badge {
+  position: absolute;
+  top: 3px;
+  right: 100px;
+  padding: 5px 10px;
+  border: 1px solid rgb(46, 46, 46);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.788);
+  color: #0c0c0c;
+  font-size: 14px;
+}

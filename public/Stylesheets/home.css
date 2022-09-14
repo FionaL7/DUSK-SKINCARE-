@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: #fae6bc;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #043b83;
+  font-size: 20px;
+}
+
+#burger {
+  position: absolute;
+  top: 0px;
+  font-size: 30px;
+}
+
+.home {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 25px;
+  color: #7b65cc;
+  text-decoration: none;
+}
+
+#products {
+  /* position: absolute;
+  top: 0px; */
+  font-size: 15px;
+  text-decoration: none;
+  color: #fae6bc;
+  border: 1px solid #fae6bc;
+  border-radius: 40px;
+}
+
+.badge {
+  position: absolute;
+  top: 3px;
+  right: 78px;
+  padding: 5px 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.brand-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Ephesis", cursive;
+  color: #5a4bbf;
+}
+
+#main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.308)),
+    url("/images/clean-beauty-GettyImages-1147783961-2000.jpeg");
+  /* background-color: #000000; */
+  background-position: center;
+  background-size: cover;
+
+  height: 95vh;
+}
+
+.main-img {
+  height: 560px;
+  display: block;
+  position: relative;
+}
+
+#main-img-cont {
+  background-color: #f2bc5781;
+  border: 2px solid #ffffff;
+  width: 410px;
+  height: 590px;
+  display: flex;
+}
+
+.brand {
+  font-family: "Ephesis", cursive;
+  padding-left: 5px;
+  display: flex;
+  font-size: 100px;
+  margin-left: 20px;
+  margin-top: 130px;
+  color: #fae6bc;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.tagline {
+  font-family: "ZCOOL XiaoWei", serif;
+  padding: 5px;
+  font-size: 27px;
+  color: #fae6bc;
+  margin-left: 30px;
+  z-index: 5;
+}
+
+#about-container {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.26),
+      rgba(255, 255, 255, 0.308)
+    ),
+    url("https://dr.savee-cdn.com/things/6/0/811371dd5c4334c5290eb1.jpg");
+  background-repeat: no-repeat;
+  /* background: linear-gradient(white, #ffd485); */
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  height: 100vh;
+}
+
+.about {
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: 27px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.about-head {
+  font-family: "ZCOOL XiaoWei", serif;
+  text-align: center;
+  color: #000000;
+  font-size: 45px;
+  margin-top: 30px;
+}
+
+#abt-inner-cont {
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.753);
+}
+
+#card-img {
+  height: 450px;
+}
+
+.slogan-text {
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+.card-title {
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+#instagram h2 {
+  font-family: "Ephesis", cursive;
+}
+
+.IG-img {
+  height: 200px;
+}
+
+#scrollmenu {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+#scrollmenu p {
+  position: relative;
+}
+
+footer {
+  background-color: #f2856d;
+  padding: 10px;
+  margin-bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+#pngs {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+@media screen and (max-width: 1100px) {
+  #about-container {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .brand {
+    font-size: 85px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #pngs {
+    height: 80px;
+    width: 80px;
+    margin-top: 13px;
+  }
+  #pngs img {
+    height: 40px;
+  }
+  #about-container {
+    height: 180vh;
+  }
+  #about-img {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #main-img-cont {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  #about-container {
+    height: 160vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .brand h1 {
+    font-size: 60px;
+  }
+  .tagline {
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20%;
+    text-align: center; */
+    font-size: 25px;
+  }
+  #about-container {
+    height: 160vh;
+  }
+  #abt-inner-cont {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #main-img-cont {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .brand h1 {
+    font-size: 45px;
+  }
+  .tagline {
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; */
+    font-size: 20px;
+    /* margin-top: 5px; */
+  }
+}

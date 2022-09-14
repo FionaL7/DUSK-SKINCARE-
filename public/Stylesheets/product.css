@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.nav-link {
+  color: #9784d9;
+  font-size: 25px;
+}
+
+.nav-link:hover {
+  color: #7b65cc;
+  font-size: 25px;
+}
+
+#burger {
+  position: absolute;
+  top: 0px;
+  font-size: 30px;
+}
+
+.home {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 25px;
+  color: #7b65cc;
+  text-decoration: none;
+}
+
+#products {
+  position: absolute;
+  top: 0px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #7b65cc;
+}
+
+.badge {
+  position: absolute;
+  top: 3px;
+  right: 80px;
+  padding: 5px 10px;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff7a;
+  font-size: 16px;
+}
+
+.brand-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Ephesis", cursive;
+  color: #5a4bbf;
+}
+
+#main {
+  /* background:linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.233)), url('https://images.unsplash.com/photo-1527904219733-fddc74937915?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+background-repeat: no-repeat;
+background-size: cover; */
+  height: 100vh;
+}
+
+.main-img {
+  height: 655px;
+  width: 1170px;
+}
+
+.about {
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: 27px;
+  text-align: center;
+  margin: 60px 80px 80px 80px;
+  color: rgba(163, 128, 252, 0.651);
+  /* text-shadow: 1.2px 1.2px rgb(76, 51, 165); */
+}
+
+.about-head {
+  font-family: "ZCOOL XiaoWei", serif;
+  text-align: center;
+  color: rgb(213, 197, 255);
+  text-shadow: 1.2px 1.2px rgb(76, 51, 165);
+  font-size: 45px;
+  margin-top: 30px;
+}
+
+.brand {
+  font-family: "Ephesis", cursive;
+  font-size: 100px;
+  position: absolute;
+  top: 260px;
+  left: 420px;
+  color: #5a4bbf;
+  text-shadow: 1.5px 1.5px white;
+}
+
+.tagline {
+  font-family: "ZCOOL XiaoWei", serif;
+  position: absolute;
+  font-size: 27px;
+  top: 360px;
+  left: 620px;
+  color: #5a4bbf;
+  text-shadow: 1.5px 1.5px white;
+}
+
+.slogan-text {
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+.card-title {
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+footer {
+  background-color: #5a4bbf;
+  padding: 10px;
+}
+
+#pngs {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #c2bbf16c;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+}
+
+#details {
+  place-items: center;
+}
+
+#description {
+  margin-top: 50px;
+}
+
+.quantity {
+  display: inline-block;
+}
+
+.quantity .input-text.qty {
+  width: 35px;
+  height: 39px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+  padding: 7px 10px 8px;
+  height: 41px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+  border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+  border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+  background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+  outline: none;
+}
+
+#hrtBtn {
+  background-color: rgba(223, 221, 221, 0.651);
+}
+
+#heartI {
+  color: rgb(156, 154, 154);
+}
+
+#heartI:hover {
+  color: #5a4bbf;
+}
+
+.list li {
+  list-style: none;
+  display: inline;
+  margin: 0 20px 0 20px;
+  font-size: 17px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Confirmation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-5">
+          <div class="card border-warning mt-5">
+            <h5
+              class="card-header text-white"
+              style="background-color: #ffd078"
+            >
+              Order Confirmation
+            </h5>
+
+            <div class="card-body">
+              <dl class="row mt-2">
+                <dt class="col-sm-3">Order ID</dt>
+                <dd class="col-sm-9" id="orderId">
+                  <%- paymentDetail.orderId %>
+                </dd>
+
+                <dt class="col-sm-3">Currency</dt>
+                <dd class="col-sm-9"><%- paymentDetail.currency %></dd>
+
+                <dt class="col-sm-3">Amount</dt>
+                <dd class="col-sm-9">Rs. <%- paymentDetail.amount/100 %></dd>
+              </dl>
+              <!-- <form action="/verify" method="GET"> -->
+              <button
+                type="submit"
+                class="btn btn-outline-dark"
+                id="confirm-btn"
+              >
+                <a href="/verify">Proceed to pay</a>
+              </button>
+              <!-- </form> -->
+            </div>
+          </div>
+          <!-- <form id="paymentVerifyForm" >
+            <input
+              name="razorpay_payment_id"
+              type="hidden"
+              id="razorpay_payment_id"
+            />
+            <input
+              name="razorpay_order_id"
+              type="hidden"
+              id="razorpay_order_id"
+            />
+            <input
+              name="razorpay_signature"
+              type="hidden"
+              id="razorpay_signature"
+            />
+          </form> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+      // document.getElementById('confirm-btn').addEventListener('click', checkout)
+
+      //            function checkout(event) {
+      //                 const paymentDetail =
+
+      //               const razorpayKeyId = "";
+      //               const orderId =  JSON.stringify(paymentDetail.orderId)
+
+      //               const options = {
+      //                 key: razorpayKeyId,
+      //                 currency: "INR",
+      //                 name: "Dusk Skincare.Inc",
+      //                 description: "Test Transaction",
+      //                 image:
+      //                   "https://e7.pngegg.com/pngimages/798/853/png-clipart-india-payment-gateway-razorpay-startup-company-india-company-text.png",
+      //                 order_id: JSON.parse(orderId),
+      //                 handler: function (response) {
+      //                 console.log('response', response)
+      //                   document.getElementById("razorpay_payment_id").value =
+      //                     response.razorpay_payment_id;
+      //                   document.getElementById("razorpay_order_id").value =
+      //                     response.razorpay_order_id;
+      //                   document.getElementById("razorpay_signature").value =
+      //                     response.razorpay_signature;
+      //                   document.getElementById("paymentVerifyForm").submit();
+      //                 },
+      //                 modal: {
+      //                   ondismiss: function () {
+      //                     alert(`Payment Failed`);
+      //                   },
+      //                 },
+      //                 theme: {
+      //                   color: "#9784d9",
+      //                 },
+      //               };
+      //               const razorpay = new Razorpay(options);
+      //               razorpay.open();
+      //               event.preventDefault();
+      //             }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
