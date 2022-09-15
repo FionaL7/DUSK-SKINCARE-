@@ -14,27 +14,15 @@
       src="https://kit.fontawesome.com/8abeab64e7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/styleSheets/cart.css" />
-    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="/stylesheets/product.css" />
+    <title>Dusk Skincare, Inc.</title>
   </head>
   <body>
-    <header class="p-5">
-      <h2 style="text-align: center">SHOPPING CART</h2>
-    </header>
+    <%- include('../partials/navbar') %>
+    <main><%- include('../partials/flashmsg') %> <%- body %></main>
+    <%- include('../partials/footer') -%>
 
-    <div class="container" style="display: flex; justify-content: center">
-      <img
-        src="https://careerindex.co.in/assets/images/emptycart.png"
-        alt=""
-        style="border: none; height: 400px; margin: auto"
-      />
-    </div>
-
-    <div class="container d-flex justify-content-center">
-      <button class="btn btn-outline-dark" style="width: 200px">
-        <a href="/product">ADD PRODUCTS</a>
-      </button>
-    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
@@ -45,6 +33,5 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
-    <script src="/Scripts/home.js"></script>
   </body>
 </html>
