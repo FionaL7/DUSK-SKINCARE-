@@ -168,12 +168,12 @@ body {
   height: 200px;
 }
 
-/* #scrollmenu {
+#scrollmenu {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
   white-space: nowrap;
-} */
+}
 
 #scrollmenu p {
   position: relative;
@@ -188,23 +188,21 @@ footer {
 }
 
 #pngs {
-  height: 70px;
-  width: 70px;
+  /* height: 70px;
+  width: 70px; */
   border-radius: 50%;
   background-color: #f0c472;
   color: #000000;
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 10px;
-  margin: auto;
+  padding: 14px;
 
 }
 
-#icon-text{
-text-align: center;
-
-}
+/* @media screen and (max-width: 1100px) {
+ 
+} */
 
 @media screen and (max-width: 915px) {
   .brand {
@@ -221,14 +219,15 @@ text-align: center;
   #pngs img {
     height: 40px;
   }
+  #about-container {
+    /* height: 180vh; */
+  }
   #about-img, #about-img div, #about-img img {
     visibility: hidden;
     display: none;
   }
   
 }
-
-
 
 @media screen and (max-width: 650px) {
   #main-img-cont {
@@ -239,7 +238,9 @@ text-align: center;
     right: 0;
   }
 
-  
+  #about-container {
+    /* height: 160vh; */
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -254,14 +255,14 @@ text-align: center;
     text-align: center; */
     font-size: 25px;
   }
-  /* #about-container {
-    height: 160vh;
+  #about-container {
+    /* height: 160vh; */
     padding: 2px;
   }
   
   #abt-inner-cont {
     height: 120vh;
-  } */
+  }
 }
 
 @media screen and (max-width: 395px) {
@@ -287,13 +288,17 @@ text-align: center;
     /* margin-top: 5px; */
   }
   
+  #pngs{
+/* height: 38px;
+width: 38px; */
+/* font-size: 10px; */
+  }
   #pngs img{
 height: 30px;
 
   }
-  #icon-text{
-font-size: 13px;
-
-  }
 }
 
+/* [class*="col-"] {
+  width: 100%;
+} */

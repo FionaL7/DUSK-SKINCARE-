@@ -168,12 +168,12 @@ body {
   height: 200px;
 }
 
-/* #scrollmenu {
+#scrollmenu {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
   white-space: nowrap;
-} */
+}
 
 #scrollmenu p {
   position: relative;

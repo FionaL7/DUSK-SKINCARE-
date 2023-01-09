@@ -168,12 +168,12 @@ body {
   height: 200px;
 }
 
-/* #scrollmenu {
+#scrollmenu {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
   white-space: nowrap;
-} */
+}
 
 #scrollmenu p {
   position: relative;
@@ -197,7 +197,6 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px;
-  margin: auto;
 
 }
 
@@ -221,14 +220,16 @@ text-align: center;
   #pngs img {
     height: 40px;
   }
-  #about-img, #about-img div, #about-img img {
+  /* #about-img, #about-img div, #about-img img {
     visibility: hidden;
     display: none;
-  }
+  } */
   
 }
 
-
+@media screen and (max-width: 786){
+  #about
+}
 
 @media screen and (max-width: 650px) {
   #main-img-cont {
@@ -239,7 +240,9 @@ text-align: center;
     right: 0;
   }
 
-  
+  #about-container {
+    /* height: 160vh; */
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -297,3 +300,6 @@ font-size: 13px;
   }
 }
 
+/* [class*="col-"] {
+  width: 100%;
+} */

@@ -84,7 +84,7 @@
     </div>
 
     <div
-      class="container-fluid mb-5 mt-1"
+      class="container-fluid mb-5 mt-1 rellax"
       data-rellax-speed="-1"
       style="background-color: rgb(255, 255, 255)"
       id="bestseller"
@@ -177,21 +177,21 @@
     </div>
 
            <!-- ABOUT SECTION -->
-    <div class="container-fluid p-4"  id="about-container">
+    <div class="container-fluid p-4" data-rellax-speed="1" id="about-container">
 
       <div class="row" id="abt-inner-cont">
 
-        <div class="col-md-8 offset-md-0 col-sm-10 offset-sm-0">
+        <div class="col-md-8 col-sm">
           <h3
             class="about-head"
-            
+            data-rellax-speed="-1"
             style="padding-top: 50px"
           >
             About us
           </h3>
           <p
-            class="about d-flex justify-content-center mx-2 py-2"
-          
+            class="about d-flex justify-content-center mx-2 pt-1"
+            data-rellax-speed="-1"
           >
             Dusk is a transparent, effective and charitable skincare brand. It
             sets out globally to find a facility that matched the expectations
@@ -201,72 +201,10 @@
             qualifications the facility holds, makes it the perfect place to
             create world class skincare.
           </p>
-          <div class="row d-flex justify-content-around px-3">
-            <div class="col-2 col-md-2 col-sm-2 offset-sm-0 col-xs-4">
-              <div class="d-flex justify-content-center" id="pngs">
-                <img
-                src="/images/test.png"
-                class="img-fluid mx-auto"
-                style="margin: auto"
-                alt=""
-              />
-              </div>
-              
-              <p class="mx-auto" id="icon-text">Gentle formulas</p>
-            </div>
-            <div class="col-2 col-md-2 col-sm-2 offset-sm-0 col-xs-4" >
-              <div class="d-flex justify-content-center" id="pngs">
-                <img
-              src="/images/cruelty-free.png"
-              class="img-fluid mx-auto"
-              style="margin: auto; padding: 7px"
-              alt=""
-            />
-              </div>
-              
-            <p class="mx-auto px-3" id="icon-text">Cruelty free</p>
-            </div>
-            <div class="col-2 col-md-2 col-sm-2 offset-sm-0 col-xs-4" >
-              <div class="d-flex justify-content-center" id="pngs">
-                <img
-              src="/images/vegan.png"
-              class="img-fluid  mx-auto"
-              style="margin: auto; padding: 7px"
-              alt=""
-                />
-              </div>
-              
-                <p class="mx-auto px-3" id="icon-text">Vegan</p>
-            </div>
-            <div class="col-2 col-md-2 col-sm-2 offset-sm-0 col-xs-4" >
-              <div class="d-flex justify-content-center" id="pngs">
-                <img
-                src="/images/water-drop.png"
-                class="img-fluid mx-auto"
-                style="margin: auto"
-                alt=""
-              />
-            </div>
-             
-            <p class="mx-auto px-3" id="icon-text">Safe</p>
-            </div>
-            <div class="col-2 col-md-2 col-sm-2 offset-sm-0 col-xs-4" >
-             <div  class="d-flex justify-content-center"id="pngs">
-            <img
-              src="/images/skincare.png"
-              class="img-fluid mx-auto"
-              style="margin: auto"
-              alt=""
-                          />
-             </div>
-                <p class="mx-auto" id="icon-text">For all skin types</p>
-            </div>
-            
-                  </div>
            </div>
 
         <div
-          class=" col-md-4 col-sm-10 d-flex justify-content-center pt-4"
+          class="col-md-4 col-sm-10 d-flex justify-content-center pt-4"
           id="about-img"
           data-aos="fade-up"
         >
@@ -290,13 +228,63 @@
         </div>
 
       </div>
- </div>
 
-    <div class="container-fluid py-3 my-4" id="instagram">
-      <h2 class="pt-3">@Dusk_Skincare</h2>
+      <div class="row d-flex justify-content-around px-3">
+<div class="col-2">
+  <img
+  src="/images/test.png"
+  class="img-fluid"
+  style="margin: auto"
+  alt=""
+/>
+  <p>Gentle formulas</p>
+</div>
+<div class="col-2">
+  <img
+  src="/images/cruelty-free.png"
+  class="img-fluid"
+  style="margin: auto; padding: 7px"
+  alt=""
+/>
+<p >Cruelty free</p>
+</div>
+<div class="col-2">
+  <img
+                  src="/images/vegan.png"
+                  class="img-fluid"
+                  style="margin: auto; padding: 7px"
+                  alt=""
+                />
+                <p >Vegan</p>
+</div>
+<div class="col-2">
+  <img
+  src="/images/water-drop.png"
+  class="img-fluid"
+  style="margin: auto"
+  alt=""
+/>
+<p >Safe</p>
+</div>
+<div class="col-2">
+  <img
+    src="/images/skincare.png"
+    class="img-fluid"
+    style="margin: auto"
+    alt=""
+                />
+    <p>For all skin types</p>
+</div>
+
+      </div>
+
+     </div>
+
+    <div class="container-fluid py-3" id="instagram">
+      <h2 class="py-3">@Dusk_Skincare</h2>
       <p>The Dusk Community</p>
       <div class="row mb-3 d-flex overflow-auto" id="scrollmenu">
-        <div class="col-md-2" style="border: 1px black">
+        <div class="col col-sm-4 col-xs-4 d-inline-block" style="border: 1px black">
           <img
             src="/images/Cuida tu piel por menos de $500 pesos - Mujer de 10_ Guía real para la mujer actual_ Entérate ya_.jpg"
             alt=""
@@ -304,12 +292,12 @@
           />
           <p class="text-muted">@_summer_girl_</p>
         </div>
-        <div class="col-md-2">
+        <div class="col col-sm-4 col-xs-4 d-inline-block">
           <img src="/images/𝙥𝙖𝙫𝙡𝙭𝙫𝙚_.jpg" alt="" class="IG-img img-fluid" />
           <p class="text-muted">@Tumblr_girl</p>
         </div>
 
-        <div class="col-md-2">
+        <div class="col col-sm-4 col-xs-4 d-inline-block">
           <img
             src="/images/via isayokey instagram_.jpg"
             alt=""
@@ -317,7 +305,7 @@
           />
           <p class="text-muted">@moonjuice</p>
         </div>
-        <div class="col-md-2">
+        <div class="col col-sm-4 col-xs-4 d-inline-block">
           <img
             src="/images/Skincare Products.jpg"
             alt=""
@@ -325,11 +313,11 @@
           />
           <p class="text-muted">@Idk_</p>
         </div>
-        <div class="col-md-2">
+        <div class="col col-sm-4 col-xs-4 d-inline-block">
           <img src="/images/download.jpg" alt="" class="IG-img img-fluid" />
           <p>@dirtydisco</p>
         </div>
-        <div class="col-md-2">
+        <div class="col col-sm-4 col-xs-4 d-inline-block">
           <img
             src="/images/What It Means to Become _That_ Girl.jpg"
             alt=""

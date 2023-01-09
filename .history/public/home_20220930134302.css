@@ -124,7 +124,7 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 20px;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .about {
@@ -144,7 +144,7 @@ body {
 }
 
 #abt-inner-cont {
-  /* height: 90vh; */
+  height: 90vh;
   background-color: rgba(255, 255, 255, 0.753);
 }
 
@@ -168,12 +168,12 @@ body {
   height: 200px;
 }
 
-/* #scrollmenu {
+#scrollmenu {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
   white-space: nowrap;
-} */
+}
 
 #scrollmenu p {
   position: relative;
@@ -191,19 +191,17 @@ footer {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background-color: #f0c472;
+  background-color: #ffffff;
   color: #000000;
   text-align: center;
-  display: flex;
   justify-content: center;
-  padding: 10px;
-  margin: auto;
-
+  padding: 14px;
 }
 
-#icon-text{
-text-align: center;
-
+@media screen and (max-width: 1100px) {
+  #about-container {
+    height: 150vh;
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -214,21 +212,21 @@ text-align: center;
 
 @media screen and (max-width: 790px) {
   #pngs {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     margin-top: 13px;
   }
   #pngs img {
     height: 40px;
   }
-  #about-img, #about-img div, #about-img img {
-    visibility: hidden;
+  #about-container {
+    height: 180vh;
+  }
+  #about-img {
+    /* visibility: hidden; */
     display: none;
   }
-  
 }
-
-
 
 @media screen and (max-width: 650px) {
   #main-img-cont {
@@ -238,8 +236,9 @@ text-align: center;
     left: 0;
     right: 0;
   }
-
-  
+  #about-container {
+    height: 160vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -254,14 +253,12 @@ text-align: center;
     text-align: center; */
     font-size: 25px;
   }
-  /* #about-container {
+  #about-container {
     height: 160vh;
-    padding: 2px;
   }
-  
   #abt-inner-cont {
     height: 120vh;
-  } */
+  }
 }
 
 @media screen and (max-width: 395px) {
@@ -286,14 +283,4 @@ text-align: center;
     font-size: 20px;
     /* margin-top: 5px; */
   }
-  
-  #pngs img{
-height: 30px;
-
-  }
-  #icon-text{
-font-size: 13px;
-
-  }
 }
-
